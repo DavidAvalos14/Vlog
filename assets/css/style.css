@@ -248,6 +248,10 @@ body {
     margin-bottom: 30px;
 }
 
+.justified-text {
+    text-align: justify;
+}
+
 /* Walk up Song Styles */
 .walkup-song-container {
     display: flex;
