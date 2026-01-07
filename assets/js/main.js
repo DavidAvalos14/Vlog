@@ -8,6 +8,18 @@ document.querySelectorAll('.nav a').forEach(link => {
         
         // Add active class to clicked link
         this.classList.add('active');
+        
+        // Get the target section
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        // Scroll to the target section
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
     });
 });
 
